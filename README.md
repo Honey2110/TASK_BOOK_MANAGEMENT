@@ -34,7 +34,8 @@ Basic (3 months)
 Standard (6 months)
 Premium (12 months)
 
-# NOTE: dates will be in format mm/dd/yyyy
+# NOTE: 
+Dates will be in format mm/dd/yyyy
 
 If the subscription date is 01/08/22 and Subscription type is Standard the valid till date will be 01/02/23
 
