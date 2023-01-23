@@ -1,0 +1,26 @@
+{
+  "name": "task_book_management",
+  "version": "1.0.0",
+  "description": "BOOK_MANAGEMENT project with help of nodejs & express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Honey2110/TASK_BOOK_MANAGEMENT.git"
+  },
+  "author": "Swapnil Khandekar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Honey2110/TASK_BOOK_MANAGEMENT/issues"
+  },
+  "homepage": "https://github.com/Honey2110/TASK_BOOK_MANAGEMENT#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
