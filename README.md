@@ -1,40 +1,40 @@
-#book-record-management-10567
+# book-record-management-10567
 This is a book record management API Backend for the management of records and books
 
-#API Documentation link
+# API Documentation link
 https://documenter.getpostman.com/view/11423344/VUqyoZdU
 
-#Routes and Endpoints
-/users
+# Routes and Endpoints
+## /users
 POST: Create a new user ✅ GET: Get all list of users ✅
 
-##/users/{id}
+## /users/{id}
 GET: Get a user by id ✅ PUT: Update a user by id ✅ DELETE: Delete a user by id (check if he/she still has an issued book) (is there any fine to be paid) ✅
 
-##/users/subscription-details/{id}
+## /users/subscription-details/{id}
 GET: Get user subscription details ✅
 
-#Date of subscription
+# Date of subscription
 Valid till
 Fine if any
-##/books
+## /books
 GET: Get all books ✅ POST: Create/Add a new book ✅
 
-##/books/{id}
+## /books/{id}
 GET: Get a book by id ✅ PUT: Update a book by id ✅
 
-##/books/issued/by-user
+## /books/issued/by-user
 GET: Get all issued books✅
 
-##/books/issued/withFine
+## /books/issued/withFine
 // TODO TASK // 🏁 GET: Get all issued books with fine
 
-#Subscription Types
+# Subscription Types
 Basic (3 months) 
 Standard (6 months)
 Premium (12 months)
 
-#NOTE: dates will be in format mm/dd/yyyy
+# NOTE: dates will be in format mm/dd/yyyy
 
 If the subscription date is 01/08/22 and Subscription type is Standard the valid till date will be 01/02/23
 
