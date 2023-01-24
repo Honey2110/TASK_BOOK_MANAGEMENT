@@ -75,5 +75,64 @@ router.get("/issued/by-user", (req, res) => {
   });
 });
 
+/**
+ * Route: /books/issued/by-user
+ * Method: GET
+ * Description: Get all issued books
+ * Access: Public
+ * Parameters: none
+ * data : author,name,genre,publisher,id
+ */
+router.post("/", (req, res) => {
+  const { data } = req.body;
+
+  if (!data) {
+    res.status(404).json({
+      success: false,
+      message: "Data not found"
+    });
+  }
+
+  const already = books.find((each) => each.id === books.id);
+  if (already) {
+    return res.status(404).json({
+      success: false,
+      message: "Mention id Already present"
+    });
+  }
+
+  const allbooks = [...books , data];
+
+  return res.status(201).json({
+    success: true,
+    message: allbooks
+  });
+
+});
+
+router.put("/:id", (req, res) => {
+  const { id } = req.params;
+  const { data } = req.body;
+  const book = books.find((each) => each.id === id);
+
+  if (!book) {
+    return res.status(400).json({
+      success: false,
+      message: "Book not found with this particular id",
+    });
+  }
+
+  const updateddata = books.map((each) => {
+    if (each.id === id) {
+      return { ...each, ...data };
+    }
+    return each;
+  });
+   return res.status(201).json({
+     success: true,
+     data : updateddata
+   });
+});
+
 // default export
 module.exports = router;

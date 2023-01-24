@@ -48,7 +48,7 @@ GET: Get all issued books with fine
 
 Basic (3 months)
 Standard (6 months)
-Premium (12 months)
+Premium (12 months)    
 
 If the subscription date is 01/08/22
 and Subscription type is Standard
