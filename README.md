@@ -3,8 +3,12 @@
 This is a book record management API Backend for the management of records and books
 
 # API Documentation link
+<<<<<<< HEAD
 
 https://documenter.getpostman.com/view/11423344/VUqyoZdU
+=======
+https://documenter.getpostman.com/view/25471333/2s8ZDbVKrN
+>>>>>>> cdf50e104f6ceb2fd55ebb43abc9ca6c170f921a
 
 # Routes and Endpoints
 
@@ -58,5 +62,11 @@ the valid till date will be 01/02/23
 If he has an issued book and the issued book is to be returned at 01/01/23
 If he missed the date of return, then he gts a fine of Rs. 100./
 
+<<<<<<< HEAD
 If he has an issued book and the issued book is to be returned at 01/01/23
 If he missed the date of return, and his subscription also expires, then he will get a fine of Rs 200./
+=======
+If he has an issued book and the issued book is to be returned at 01/01/23 If he missed the date of return, then he gts a fine of Rs. 100./
+
+If he has an issued book and the issued book is to be returned at 01/01/23 If he missed the date of return, and his subscription also expires, then he will get a fine of Rs 200./
+>>>>>>> cdf50e104f6ceb2fd55ebb43abc9ca6c170f921a
